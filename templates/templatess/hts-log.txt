@@ -1,0 +1,40 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 19 Dec 2023 11:06:58 at https://muson.laborasyon.com/layouts/vertical/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://muson.laborasyon.com/layouts/vertical/index.html -O1 "C:\Users\USER\Desktop\ikenna\website\Project\project\templates\templatess" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:07:58	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/vendors/slick/slick.css (from https://muson.laborasyon.com/layouts/vertical/index.html)
+11:08:10	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/assets/media/image/products/product3.png (from https://muson.laborasyon.com/layouts/vertical/index.html)
+11:08:27	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/layouts/vertical/tooltip.html (from https://muson.laborasyon.com/layouts/vertical/index.html)
+11:08:27	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/layouts/vertical/popovers.html (from https://muson.laborasyon.com/layouts/vertical/index.html)
+11:08:49	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/vendors/quill/quill.snow.css (from https://muson.laborasyon.com/layouts/vertical/mail.html)
+11:08:49	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/vendors/tagsinput/bootstrap-tagsinput.css (from https://muson.laborasyon.com/layouts/vertical/mail.html)
+11:08:52	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/layouts/vertical/popovers.html (from https://muson.laborasyon.com/layouts/vertical/index.html)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/popper.js (from https://muson.laborasyon.com/vendors/bundle.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/node.js (from https://muson.laborasyon.com/vendors/bundle.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/zlib/deflate.js (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/zlib/inflate.js (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/layouts/vertical/buttons.pdf (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/layouts/vertical/xl/worksheets/sheet1.xml (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/xl/workbook.xml (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/xl/styles.xml (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/[Content_Types].xml (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/resources/js/app.js (from https://muson.laborasyon.com/assets/js/app.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/blots/ (from https://muson.laborasyon.com/vendors/quill/quill.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/formats/ (from https://muson.laborasyon.com/vendors/quill/quill.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/raphael.svg (from https://muson.laborasyon.com/vendors/charts/justgage/raphael-2.1.4.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/vendors/enjoyhint/Casino_Hand/casino_hand-webfont.eot (from https://muson.laborasyon.com/vendors/enjoyhint/enjoyhint.css)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/vendors/enjoyhint/Casino_Hand/casino_hand-webfont.eot? (from https://muson.laborasyon.com/vendors/enjoyhint/enjoyhint.css)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/vendors/enjoyhint/Casino_Hand/casino_hand-webfont.woff (from https://muson.laborasyon.com/vendors/enjoyhint/enjoyhint.css)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/vendors/enjoyhint/Casino_Hand/casino_hand-webfont.ttf (from https://muson.laborasyon.com/vendors/enjoyhint/enjoyhint.css)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/vendors/enjoyhint/Casino_Hand/casino_hand-webfont.svg (from https://muson.laborasyon.com/vendors/enjoyhint/enjoyhint.css)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/buttons.pdf (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Warning: 	Retry after error -4 (No data (connection closed)) at link https://muson.laborasyon.com/layouts/vertical/xl/worksheets/sheet1.xml (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+11:08:55	Error: 	"Not Found" (404) at link https://muson.laborasyon.com/layouts/vertical/xl/worksheets/sheet1.xml (from https://muson.laborasyon.com/vendors/dataTable/datatables.min.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 57 seconds : 240 links scanned, 210 files written (16877301 bytes overall) [7521084 bytes received at 64282 bytes/sec], 12002084 bytes transferred using HTTP compression in 180 files, ratio 20%, 14.1 requests per connection
+(19 errors, 10 warnings, 0 messages)

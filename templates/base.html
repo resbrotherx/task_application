@@ -1,0 +1,357 @@
+{% load static %}
+ 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task - Admin & Dashboard </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'assetst/media/image/favicon.png' %}"/>
+
+    <!-- Plugin styles -->
+    <link rel="stylesheet" href="{% static 'vendors/bundle.css' %}" type="text/css">
+
+        <!-- quill -->
+    <link href="{% static 'vendors/quill/quill.snow.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- Clockpicker -->
+    <link rel="stylesheet" href="{% static 'vendors/clockpicker/bootstrap-clockpicker.min.css' %}" type="text/css">
+
+    <!-- Datepicker -->
+    <link rel="stylesheet" href="{% static 'vendors/datepicker/daterangepicker.css' %}" type="text/css">
+
+    <!-- Select2 -->
+    <link rel="stylesheet" href="{% static 'vendors/select2/css/select2.min.css' %}" type="text/css">
+
+    <!-- App styles -->
+    <link rel="stylesheet" href="{% static 'assetst/css/app.min.css' %}" type="text/css">
+
+            <!-- Fullcalendar -->
+    <link rel="stylesheet" href="{% static 'vendors/fullcalendar/fullcalendar.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.css">
+            <!-- Clockpicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+
+</head>
+<body  class="stretch-layout small-navigation" >
+
+<!-- begin::preloader-->
+<!-- <div class="preloader">
+    <div class="preloader-icon"></div>
+</div> -->
+<!-- end::preloader -->
+
+<!-- BEGIN: Sidebar Group -->
+
+<!-- END: Sidebar Group -->
+
+<!-- begin::main -->
+<div class="layout-wrapper">
+
+    <!-- begin::header -->
+    <div class="header d-print-none">
+
+        <div class="header-left">
+            <div class="navigation-toggler">
+                <a href="#" data-action="navigation-toggler">
+                    <i data-feather="menu"></i>
+                </a>
+            </div>
+            <div class="header-logo">
+                <a href="/">
+                  <!--   <img class="logo" src="../../assets/media/image/logo.png" alt="logo">
+                    <img class="logo-light" src="../../assets/media/image/logo-light.png" alt="light logo"> -->
+                    <b>TASK MANAGER</b>
+
+                </a>
+            </div>
+        </div>
+
+        <div class="header-body">
+            <div class="header-body-left">
+                <div class="page-title">
+                    <h4>Task List</h4>
+                </div>
+            </div>
+            <div class="header-body-right">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a href="/dashboard" class="nav-link" title="User menu" data-sidebar-target="#user-menu">
+                            <span class="mr-2 d-sm-inline d-none">Dashboard</span>
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/task" class="nav-link" title="User menu" data-sidebar-target="#user-menu">
+                            <span class="mr-2 d-sm-inline d-none">Task Hub</span>
+                           
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/calendar" class="nav-link" title="User menu" data-sidebar-target="#user-menu">
+                            <span class="mr-2 d-sm-inline d-none">Calendar</span>
+                           
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/chat" class="nav-link" title="User menu" data-sidebar-target="#user-menu">
+                            <span class="mr-2 d-sm-inline d-none">My chats</span>
+                           
+                        </a>
+                    </li>
+                    <!-- begin::user menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" title="User menu" data-sidebar-target="#user-menu">
+                            <span class="mr-2 d-sm-inline d-none">{{user.username}} </span>
+                            <figure class="avatar avatar-sm">
+                                <img src="{{user.profile.image.url}}" class="rounded-circle"
+                                     alt="avatar">
+                            </figure>
+                        </a>
+                    </li>
+                    <!-- end::user menu -->
+
+                </ul>
+
+                <!-- begin::mobile header toggler -->
+                <ul class="navbar-nav d-flex align-items-center">
+                    <li class="nav-item header-toggler">
+                        <a href="#" class="nav-link">
+                            <i data-feather="arrow-down"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- end::mobile header toggler -->
+            </div>
+        </div>
+
+    </div>
+    <!-- end::header -->
+
+
+
+
+    {% block content %}
+
+
+    {% endblock content %}
+
+
+
+    
+</div>
+<!-- end::main -->
+<script src="https://use.fontawesome.com/eea7d85770.js"></script>
+
+<!-- Plugin scripts -->
+<script src="{% static 'vendors/bundle.js' %}"></script>
+
+    <!-- Fullcalendar -->
+    <script src="{% static 'vendors/fullcalendar/moment.min.js' %}"></script>
+    <script src="{% static 'vendors/fullcalendar/fullcalendar.min.js' %}"></script>
+    <script src="{% static 'assetst/js/examples/fullcalendar.js' %}"></script>
+
+    <!-- Tagsinput -->
+    <script src="{% static 'vendors/tagsinput/bootstrap-tagsinput.js' %}"></script>
+    <script src="{% static 'assetst/js/examples/tagsinput.js' %}"></script>
+
+    <script src="{% static 'assetst/js/examples/pages/calendar.js' %}"></script>
+
+    <!-- quill -->
+    <script src="{% static 'vendors/quill/quill.js' %}"></script>
+
+    <!-- Clockpicker -->
+    <script src="{% static 'vendors/clockpicker/bootstrap-clockpicker.min.js' %}"></script>
+    <script src="{% static 'assetst/js/examples/clockpicker.js' %}"></script>
+
+    <!-- Select2 -->
+    <script src="{% static 'vendors/select2/js/select2.min.js' %}"></script>
+    <script src="{% static 'assetst/js/examples/select2.js' %}"></script>
+
+    <!-- Datepicker -->
+    <script src="{% static 'vendors/datepicker/daterangepicker.js' %}"></script>
+    <script src="{% static 'assetst/js/examples/datepicker.js' %}"></script>
+
+    <script>
+        new Quill('.reply-email-quill-editor', {
+            modules: {
+                toolbar: ".reply-email-quill-toolbar"
+            },
+            placeholder: "Type something... ",
+            theme: "snow"
+        });
+
+        $(function () {
+            $(document).on('click', '.app-block .app-content .app-action .action-left input[type="checkbox"]', function () {
+                $('.app-lists ul li input[type="checkbox"]').prop('checked', $(this).prop('checked'));
+                if ($(this).prop('checked')) {
+                    $('.app-lists ul li input[type="checkbox"]').closest('li').addClass('active');
+                } else {
+                    $('.app-lists ul li input[type="checkbox"]').closest('li').removeClass('active');
+                }
+            });
+
+            $(document).on('click', '.app-lists ul li input[type="checkbox"]', function () {
+                if ($(this).prop('checked')) {
+                    $(this).closest('li').addClass('active');
+                } else {
+                    $(this).closest('li').removeClass('active');
+                }
+            });
+
+            $(document).on('click', '.app-block .app-content .app-content-body .app-lists ul.list-group li.list-group-item', function (e) {
+                if (!$(e.target).is('.custom-control, .custom-control *, a, a *')) {
+                    $('.app-detail').addClass('show').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
+                        $('.app-block .app-content .app-content-body .app-detail .app-detail-article').niceScroll().resize();
+                    });
+                }
+            });
+
+            $(document).on('click', 'a.app-detail-close-button', function () {
+                $('.app-detail').removeClass('show');
+                return false;
+            });
+
+            $(document).on('click', '.app-sidebar-menu-button', function () {
+                $('.app-block .app-sidebar, .app-content-overlay').addClass('show');
+                // $('.app-block .app-sidebar .app-sidebar-menu').niceScroll().resize();
+                return false;
+            });
+
+            $(document).on('click', '.app-content-overlay', function () {
+                $('.app-block .app-sidebar, .app-content-overlay').removeClass('show');
+                return false;
+            });
+
+            $('.app-block .app-content .app-content-body .app-lists ul').sortable({
+                axis: "y",
+                cursor: "move",
+                handle: '.app-sortable-handle'
+            }).disableSelection();
+        });
+    </script>
+
+
+<!-- App scripts -->
+<script src="{% static 'assetst/js/app.min.js' %}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js"></script>
+<!-- chat massage javascript file code here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+
+<script type="text/javascript">
+    $(document).on('submit', '#chat-form', function (e) {
+        e.preventDefault();
+        let _body = $("#body").val()
+        let _to_user = $("#to_user").val()
+
+        $.ajax({
+            type: "POST",
+            url: "{% url 'chats:send-directs' %}",
+            data: {
+                body: _body,
+                to_user: _to_user,
+                csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+            },
+            success: function (data){
+                console.log('working')
+                let _html = '<div class="message-item me">\
+                                <div class="message-item-content">'+ _body +'</div>\
+                                <span class="time small text-muted font-italic">{{direct.date|timesince}}</span>\
+                            </div>\
+                            '
+                $(".chatappend").append(_html)
+            }
+            
+        })
+        document.getElementById("body").value=""
+    })
+
+    $(document).on('submit', '#task-form', function (e) {
+        e.preventDefault();
+        let task_id = $("#task_id").val()
+        let to_user = $("#to_user").val()
+
+        $.ajax({
+            type: "POST",
+            url: "{% url 'chats:shead_task' %}",
+            data: {
+                task_id: task_id,
+                to_users: to_user,
+                csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+            },
+            success: function (data){
+                console.log('working',data)
+                alert(data['success'])
+                // let _html = '<div class="message-item me">\
+                //                 <div class="message-item-content">'+ _body +'</div>\
+                //                 <span class="time small text-muted font-italic">{{direct.date|timesince}}</span>\
+                //             </div>\
+                //             '
+                // $(".chatappend").append(_html)
+            },
+            error: function (error) {
+                console.log('error', error);
+                alert("error");
+                // Handle error, show error message, etc.
+            }
+            
+        })
+        document.getElementById("body").value=""
+    })
+
+
+    // emoji select
+    $(document).ready(function(){
+        $("#emoji").emojioneArea({
+            pickerPosition:"bottom"
+        })
+    })
+
+    // emoji submit section
+    $(document).on('submit', '#emoji-form', function (e) {
+        e.preventDefault();
+        let task_id = $("#task_id").val()
+        let emojis = $("#emoji").val()
+
+        $.ajax({
+            type: "POST",
+            url: "{% url 'chats:emoji_send' %}",
+            data: {
+                task_id: task_id,
+                emojis: emojis,
+                csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+            },
+            success: function (data){
+                console.log('working',data)
+                alert(data['success'])
+                location.reload('/task/')
+                // let _html = '<div class="message-item me">\
+                //                 <div class="message-item-content">'+ _body +'</div>\
+                //                 <span class="time small text-muted font-italic">{{direct.date|timesince}}</span>\
+                //             </div>\
+                //             '
+                // $(".chatappend").append(_html)
+            },
+            error: function (error) {
+                console.log('error', error);
+                alert("error");
+                // Handle error, show error message, etc.
+            }
+            
+        })
+        document.getElementById("body").value=""
+    })
+    $(document).ready(function(){
+        $("#emoji").emojioneArea({
+            pickerPosition:"bottom"
+        })
+    })
+</script>
+</body>
+</html>

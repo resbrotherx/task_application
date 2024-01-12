@@ -1,0 +1,201 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+    <div class="content-wrapper">
+
+        <div class="content-body">
+
+            <div class="content">
+
+                
+    <div class="page-header">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="/">All Task</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <p class="text-muted">Total Task</p>
+                                    <h2 class="font-weight-bold">{{total_task}}</h2>
+                                </div>
+                                <div>
+                                    <figure class="avatar">
+                                        <span class="avatar-title bg-success-bright text-success rounded-circle">
+                                            <i class="ti-bar-chart"></i>
+                                        </span>
+                                    </figure>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <p class="text-muted">Total Completed</p>
+                                    <h2 class="font-weight-bold">{{total_completed_task}}</h2>
+                                </div>
+                                <div>
+                                    <figure class="avatar">
+                                        <span class="avatar-title bg-info-bright text-info rounded-circle">
+                                            <i class="ti-package"></i>
+                                        </span>
+                                    </figure>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-3">
+                                <div>
+                                    <p class="text-muted">Total Recieved</p>
+                                    <h2 class="font-weight-bold">{{total_received_task}}</h2>
+                                </div>
+                                <div>
+                                    <figure class="avatar">
+                                        <span class="avatar-title bg-warning-bright text-warning rounded-circle">
+                                            <i class="ti-reload"></i>
+                                        </span>
+                                    </figure>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="card-title">Shared Task</h6>
+                        <div>
+                            <a href="#" class="btn btn-outline-light btn-sm mr-2">
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown"
+                                   class="btn btn-outline-light btn-sm"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-4">
+                            <p class="mb-2">Total Shared Task</p>
+                            <div class="d-flex align-items-end">
+                                <h2 class="mb-0 line-height-30 font-size-35">{{total_shared_task}}</h2>
+                                <span class="text-success small ml-2 d-flex align-items-center">
+                                    <span class="ti-arrow-up mr-2"></span>
+                                    <span class="badge badge-success rounded d-inline-flex align-items-center">{{total_shared_task}}%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="mb-2">Total Completed Task</p>
+                            <div class="d-flex align-items-end">
+                                <h2 class="mb-0 line-height-30 font-size-35">{{total_shared_completed_task}}</h2>
+                                <span class="text-danger small ml-2 d-flex align-items-center">
+                                    <span class="ti-arrow-down mr-2"></span>
+                                    <span class="badge badge-danger rounded d-inline-flex align-items-center">{{total_shared_completed_task}}%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="revenue"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <h6 class="card-title">History</h6>
+                        <div>
+                            <div class="dropdown">
+                                <a href="#" data-toggle="dropdown"
+                                   class="btn btn-outline-light btn-sm"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="hot-products"></div>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item pl-0 pr-0">
+                                <i class="fa fa-circle mr-1 text-secondary"></i> ......
+                            </li>
+                            <li class="list-group-item pl-0 pr-0">
+                                <i class="fa fa-circle mr-1 text-warning"></i> .....
+                            </li>
+                            <li class="list-group-item pl-0 pr-0">
+                                <i class="fa fa-circle mr-1 text-info"></i> .....
+                            </li>
+                            <!-- <li class="list-group-item pl-0 pr-0">
+                                <i class="fa fa-circle mr-1 text-success"></i> General Mobile
+                            </li>
+                            <li class="list-group-item pl-0 pr-0">
+                                <i class="fa fa-circle mr-1 text-danger"></i> Xiaomi
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+            </div>
+
+            <!-- begin::footer -->
+           
+            <!-- end::footer -->
+
+        </div>
+
+    </div>
+    {% endblock content %}
